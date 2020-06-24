@@ -1,3 +1,3 @@
 # GarbariSi
 
-![Enunciado](Enunciado.png)
+![Enunciado](enunciado.png)
