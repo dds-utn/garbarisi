@@ -1,2 +1,3 @@
-# garbarisi
-Dominio resuelto con patrón Observer
+# GarbariSi
+
+![Enunciado](Enunciado.png)
