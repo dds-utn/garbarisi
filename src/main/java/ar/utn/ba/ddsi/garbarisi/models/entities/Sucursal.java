@@ -1,12 +1,14 @@
-package domain;
+package ar.utn.ba.ddsi.garbarisi.models.entities;
 
-import domain.observers.IObserver;
-import domain.productos.Producto;
+import ar.utn.ba.ddsi.garbarisi.models.entities.observers.IObserver;
+import ar.utn.ba.ddsi.garbarisi.models.entities.productos.Producto;
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@Getter
 public class Sucursal {
     private String nombre;
     private List<Producto> productos;
@@ -16,14 +18,6 @@ public class Sucursal {
         this.nombre = nombre;
         this.productos = new ArrayList<>();
         this.observers = new ArrayList<>();
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public List<Producto> getProductos() {
-        return productos;
     }
 
     public void agregarObservers(IObserver... observers){

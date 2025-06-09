@@ -1,18 +1,17 @@
-package domain.observers;
+package ar.utn.ba.ddsi.garbarisi.models.entities.observers;
 
-import domain.productos.Producto;
+import ar.utn.ba.ddsi.garbarisi.models.entities.productos.Producto;
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Deposito implements IObserver {
 	private List<Producto> productosAPreparar;
 	
 	public Deposito(){
 		this.productosAPreparar = new ArrayList<>();
-	}
-
-	public List<Producto> getProductosAPreparar() {
-		return productosAPreparar;
 	}
 
 	public void notificarVenta(Producto producto){

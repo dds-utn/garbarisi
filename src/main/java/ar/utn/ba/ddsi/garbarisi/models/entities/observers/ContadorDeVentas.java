@@ -1,13 +1,11 @@
-package domain.observers;
+package ar.utn.ba.ddsi.garbarisi.models.entities.observers;
 
-import domain.productos.Producto;
+import ar.utn.ba.ddsi.garbarisi.models.entities.productos.Producto;
+import lombok.Getter;
 
+@Getter
 public class ContadorDeVentas implements IObserver {
 	private int cantidadVentas;
-	
-	public int getCantidadVentas() {
-		return cantidadVentas;
-	}
 
 	public ContadorDeVentas(){
 		this.cantidadVentas = 0;

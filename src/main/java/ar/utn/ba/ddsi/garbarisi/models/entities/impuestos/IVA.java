@@ -1,14 +1,12 @@
-package domain.impuestos;
+package ar.utn.ba.ddsi.garbarisi.models.entities.impuestos;
 
-import domain.productos.Producto;
+import ar.utn.ba.ddsi.garbarisi.models.entities.productos.Producto;
+import lombok.Setter;
 
 public class IVA implements Impuesto {
+	@Setter
 	private static Double porcentaje;
-	
-	public static void setPorcentaje(Double tasa){
-		porcentaje = tasa;
-	}
-	
+
 	public static Double getPorcentaje(){
 		return IVA.porcentaje;
 	}
